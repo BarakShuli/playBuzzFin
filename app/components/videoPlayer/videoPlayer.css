@@ -1,0 +1,6 @@
+.videoContainer{margin:20px 0 0 ;border:solid 1px #E3E3E3;width:712px;height:548px;}
+.videoHeader{height:75px;color:#4F5052;width:670px;margin:0 auto;line-height: 75px}
+.videoHeader:after{clear:both;float:none;content:"";height:1px;}
+.videoHeader .title{float:left;}
+.videoHeader .views{float:right;}
+.videoHeader .errorMsg{background-color: #FAFAFA;color:#919A9F;text-align: center;font-size:18px;font-weight:bold;margin:40px 0 0;}

@@ -1,0 +1,5 @@
+
+#mainContainer{}
+#mainContainer #title{width:900px;height:68px;border-bottom: solid 1px #E4E4E4;margin:0 auto;background-color: #FAFAFA;}
+#mainContainer #title #text{color:#919A9F;line-height: 68px;text-align: center;padding:0px;}
+#mainContainer #content{width:715px;margin:0 auto;}

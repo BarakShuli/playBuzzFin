@@ -1,0 +1,34 @@
+
+
+<div ng-repeat="item in vm.list track by $index">
+    <div class="videoContainer">
+        <div ng-if="vm.isValidJson(item)">
+            <div class="videoHeader">
+                <div class="title">{{item.title}}</div>
+                <div class="views">{{item.views}}</div>
+            </div>
+
+            <div ng-if="item.source === 'facebook'">
+                <iframe ng-src="{{vm.trustSrc('https://www.facebook.com/video/embed?video_id=',item.videoId)}}" width="712" height="473" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+            </div>
+
+            <div ng-if="item.source === 'youtube'">
+                <iframe width="712" height="473"
+                    ng-src="{{vm.trustSrc('https://www.youtube.com/embed/',item.videoId)}}">
+                </iframe>
+            </div>
+            
+            <div ng-if="item.source === 'url'">
+                <video width="712" height="473" controls>
+                    <source ng-src="{{vm.trustSrc('',item.url)}}" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div ng-if="!vm.isValid">
+            <div class="videoHeader">
+                <div class="errorMsg">{{vm.errorMsg}}</div>
+            </div>
+        </div>
+
+    </div>
+</div>
