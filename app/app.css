@@ -1,5 +1,7 @@
 
-#mainContainer{}
+#mainContainer{position:relative}
 #mainContainer #title{width:900px;height:68px;border-bottom: solid 1px #E4E4E4;margin:0 auto;background-color: #FAFAFA;}
 #mainContainer #title #text{color:#919A9F;line-height: 68px;text-align: center;padding:0px;}
 #mainContainer #content{width:715px;margin:0 auto;}
+#ajaxLoaderContainer {position:absolute;top:0;left:0;width:100%;height:100%;z-index:1000;background-color:grey;opacity: .8;}
+.ajaxLoader {position: fixed;left: 50%;top: 50%;margin-left: -32px;margin-top: -32px;display: block;width:80px;height:80px;}

@@ -33,5 +33,5 @@ app.all('/*', (req, res, next) => {
     res.sendFile(path.join(__dirname, '../app/index.html'));
 });
 
-app.listen(8000);
-console.log("App listening on port 8000", __dirname);
+app.listen(8080);
+console.log("App listening on port 8080", __dirname);

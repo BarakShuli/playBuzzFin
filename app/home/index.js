@@ -33,10 +33,12 @@
         
         /* render ng-repeat after seleced dropdown option changed */
         vm.getSelectedValue = function(){
+            vm.showSpinner = true;
             var promiseObj = videoFeedService.getVideoFeedList($http, vm);
             promiseObj.then(function(result){
                 vm.isDataAvailable = true;
                 vm.dataList = result;
+                vm.showSpinner = false;
             })
         }
 

@@ -8,7 +8,7 @@
     videoFeedService.$inject = ['$http'];
 
     function videoFeedService($http) {
-        var cdnUrl = 'http://localhost:8000/getVideoFeed', self = this;
+        var cdnUrl = 'http://localhost:8080/getVideoFeed', self = this;
         this.isDataAvailable = false;
         
         /* call server to get filtered data */

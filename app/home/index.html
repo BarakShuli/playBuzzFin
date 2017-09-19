@@ -1,4 +1,7 @@
 <div id="mainContainer">
+    <div id="ajaxLoaderContainer" ng-if="vm.showSpinner">
+        <img src="https://cdn.dribbble.com/users/406059/screenshots/1430999/dribbble_orange.gif" class="ajaxLoader"/>
+    </div>
     <div id="title">
         <p id="text">VIDEO FEED</p>
         <select ng-model="vm.ddlSelectedVideoType" 

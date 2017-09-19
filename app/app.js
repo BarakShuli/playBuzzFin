@@ -6,7 +6,12 @@ angular.module('myApp', [
   'myApp.index',
   'myApp.videoPlayer',
   'myApp.videoFeedService',
-  'myApp.jsonValidationService'
+  'myApp.videoPlayerService',
+  'myApp.jsonValidationService',
+  'myApp.facebookComponent',
+  'myApp.youtubeComponent',
+  'myApp.basicVideoComponent'
+
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $routeProvider.otherwise({redirectTo: '/index'});
